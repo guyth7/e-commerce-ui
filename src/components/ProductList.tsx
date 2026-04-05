@@ -1,11 +1,11 @@
-import { ProductsType } from "@/types";
+import { ProductType } from "@/types";
 import React from "react";
 import Categories from "./Categories";
 import ProductCard from "./ProductCard";
 import Link from "next/link";
 import Filters from "./Filters";
 // TEMPORARY
-const products: ProductsType[] = [
+const products: ProductType[] = [
   {
     id: 1,
     name: "Adidas CoreFit T-Shirt",

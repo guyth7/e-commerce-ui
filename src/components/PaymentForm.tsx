@@ -2,7 +2,6 @@ import { PaymentFormInputs, paymentFormSchema } from "@/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 const PaymentForm = () => {
@@ -13,8 +12,6 @@ const PaymentForm = () => {
   } = useForm<PaymentFormInputs>({
     resolver: zodResolver(paymentFormSchema),
   });
-
-  const router = useRouter();
 
   const handlePaymentForm: SubmitHandler<PaymentFormInputs> = (data) => {};
 

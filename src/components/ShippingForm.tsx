@@ -67,7 +67,7 @@ const ShippingForm = ({
         <input
           type="text"
           id="phone"
-          placeholder="(123) 456-7890"
+          placeholder="1234567890"
           {...register("phone")}
           className="border-b border-gray-200 py-2 outline-none text-sm"
         />
@@ -98,7 +98,7 @@ const ShippingForm = ({
         </label>
         <input
           type="text"
-          id="New York"
+          id="city"
           placeholder="City"
           {...register("city")}
           className="border-b border-gray-200 py-2 outline-none text-sm"
